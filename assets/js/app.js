@@ -1,8 +1,8 @@
 //////prloader//////
 setTimeout(() => {
-    preloader.classList.add("d-none")
-    preloader.classList.add("overflow-hidden")
-  }, 4000)
+    document.getElementById("preloder").classList.add("d-none");
+    document.body.classList.remove("overflow-hidden");
+}, 4000);
  
 /////////back-to-top/////////
 document.addEventListener("DOMContentLoaded", function () {
@@ -21,11 +21,15 @@ document.addEventListener("DOMContentLoaded", function () {
         document.documentElement.scrollTop = 0;
     };
   });
-
-function toggleNav() {
+//////////////////////////navbar////////////////////////
+  function toggleNav() {
     const body = document.body;
     const navList = document.getElementById('nav-list');
+    const burgerMenu = document.getElementById('burger-menu');
 
     body.classList.toggle('overflow_hidden');
     navList.classList.toggle('show');
+
+    // Toggle the cross and three lines
+    burgerMenu.classList.toggle('cross');
 }

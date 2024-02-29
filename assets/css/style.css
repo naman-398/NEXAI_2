@@ -41,7 +41,39 @@
 .fs-2lg {
   font-size: var(--fs-2lg);
 }
+/* //////////////////////navbar///////////////////////////////  */
+.burger-menu {
+  display: block;
+  position: relative;
+  z-index: 11;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Transition for the burger menu */
+}
 
+.burger-menu span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #02CDCF;
+  border-radius: 10px;
+  margin: 6px 0;
+  transition: background-color 0.3s ease; /* Transition for each bar */
+}
+
+.burger-menu.cross {
+  transform: rotate(45deg); /* Rotate the first and third bar to make a cross */
+}
+
+.burger-menu.cross span:nth-child(2) {
+  opacity: 0; /* Hide the middle bar of the cross */
+}
+
+.burger-menu.cross span:nth-child(1){
+  transform: rotate(182deg);
+}
+.burger-menu.cross span:nth-child(3) {
+  transform: rotate(92deg) translate(-17px, 1px); /* Reverse rotate for the first and third bars */
+}
 /* /////////////////////////////////////////////////////////////// PRELOADER //////////////////////////////////////////// */
 .z-20{
   z-index: 20;
@@ -531,6 +563,10 @@ ul {
 .s2img {
   max-width: 612px;
   max-height: 507px;
+  mix-blend-mode: color-dodge;
+}
+.overflow-hidden{
+  overflow: hidden;
 }
 .max-w-517 {
   max-width: 517px;
@@ -798,7 +834,7 @@ width: 85%;
 
 /* //////////////////////////////////////////////////////// PAGE__ELIPSE  ////////////////////////////////////////////////// */
 .s2elipse2{
-  bottom: -11%;
+  bottom: -7%;
 }
 .sliderelipse1{
   position: absolute;
@@ -865,6 +901,12 @@ width: 85%;
   right: 0;
   bottom: 1%;
   z-index: 0;
+}
+.s2-elipse1{
+  left: 20%;
+  top: 55%;
+  max-width: 650px;
+  max-height: 650px;
 }
 /* //////////////////////////////////////////////////////// BREAKPOINTS  ////////////////////////////////////////////////// */
  
@@ -1198,17 +1240,13 @@ width: 85%;
     width: 100%;
     backdrop-filter: blur(100px);
     z-index: 10;
-    opacity: 0; /* Set initial opacity to 0 */
-    transform: translateY(-100%); /* Slide up initially */
-    transition: opacity 500ms ease, transform 500ms ease;
+transition: all 300ms linear;
   }
   body.overflow_hidden{
     overflow: hidden;
   }
   .nav-list.show {
     display: flex;
-    opacity: 1; 
-    transform: translateY(0);
   }
 
   .nav-list li {
