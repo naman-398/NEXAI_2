@@ -435,7 +435,7 @@ ul {
   padding-top: 45px;
 }
 .timelinemt{
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .s8-padding{
   padding-top: 60px;
@@ -780,7 +780,7 @@ width: 85%;
   position: absolute;
   width: 8px;
   background-color: #02CDCF;
-  top: 7px;
+  top: 67px;
   bottom: 0;
   left: 5%;
   margin-left: -3px;
@@ -802,7 +802,7 @@ width: 85%;
   height: 24px;
   left: -34px;
   background-color: white;
-  top: 100px;
+  top: 150px;
   border-radius: 50%;
   z-index: 1;
 }
@@ -979,7 +979,7 @@ width: 85%;
     padding-top: 80px;
   }
   .timelineoverflow{
-    height: 511px;
+    height: 542px;
   }
   .s7-padding{
     padding-top: 60px;
@@ -1016,7 +1016,7 @@ width: 85%;
     padding-top: 45px;
   }
   .content {
-    padding: 0px 0px 30px 15px;
+    padding: 30px 0px 0px 15px;
   }
   .containertimeline::after {
     left: -46px;
@@ -1107,7 +1107,7 @@ width: 85%;
     padding-bottom: 50px;
   }
   .content {
-    padding: 0px 0px 60px 15px;
+    padding: 60px 0px 0px 15px;
   }
   .containertimeline::after {
     left: -52px;
@@ -1139,7 +1139,7 @@ width: 85%;
     width: 65%;
   }
   .timelinemt{
-    margin-top: 110px;
+    margin-top: 50px;
   }
   .s7-padding{
     padding-top: 160px;
@@ -1208,7 +1208,7 @@ width: 85%;
 }
 @media (min-width:1200px) {
   .content {
-    padding: 0px 0px 60px 45px;
+    padding: 60px 0px 0px 45px;
   }
   .s8-padding{
     padding-top: 287px;
