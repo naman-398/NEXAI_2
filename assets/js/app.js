@@ -2,7 +2,7 @@
 setTimeout(() => {
     preloader.classList.add("d-none")
     preloader.classList.add("overflow-hidden")
-  }, 0)
+  }, 4000)
  
 /////////back-to-top/////////
 document.addEventListener("DOMContentLoaded", function () {
