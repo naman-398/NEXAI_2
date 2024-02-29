@@ -1238,7 +1238,7 @@ width: 85%;
     left: 0;
     max-width: 500px;
     width: 100%;
-    backdrop-filter: blur(100px);
+    background-color: #0b0a0af1;
     z-index: 10;
 transition: all 300ms linear;
   }
